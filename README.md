@@ -3,6 +3,11 @@
 Refonte moderne et responsive du site `kfz-gutachten-smida-muenchen.de` (archive : `smida_archive`).
 Site 100 % statique : HTML + 1 CSS + 1 petit JS vanilla. Aucun framework, aucun build.
 
+**Trilingue** : allemand (racine, langue par défaut), anglais (`/en/`), arabe RTL (`/ar/`).
+Sélecteur DE | EN | ع dans le header et le menu mobile ; balises `hreflang` sur chaque page ;
+sitemap multilingue. L'arabe utilise la police Cairo et des surcharges CSS `[dir="rtl"]`
+(menus, dégradés miroirs, numéros/adresses maintenus en écriture latine via `.ltr`).
+
 ## Structure
 
 ```
@@ -18,6 +23,7 @@ datenschutz.html            ⚠ Placeholder — faire valider juridiquement
 assets/css/style.css        Design system complet (tokens, composants)
 assets/js/main.js           Menu mobile, reveal au scroll, compteurs, formulaire → mailto
 assets/img/                 Toutes les images de l'ancien site, renommées proprement
+en/, ar/                    Versions anglaise et arabe (mêmes noms de fichiers)
 robots.txt, sitemap.xml     SEO
 ```
 
